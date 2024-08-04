@@ -58,6 +58,20 @@
                 <a href="https://inapakruthikasrilalithachandana.github.io/Friendshipday1/" target="_blank"><button class="btn btn-success btn-lg">Click Here</button></a>
             </div>
         </footer>
+        <script>
+            $(document).ready(function(){
+                $('#banner').carousel({ interval: 1000 });
+        
+                $('#banner').hover(
+                    function() {
+                        $(this).carousel('pause');
+                    }, 
+                    function() {
+                        $(this).carousel('cycle');
+                    }
+                );
+            });
+        </script>
     <script src="jquery.js"></script>
     <script src="bootstrap.bundle.js"></script>
 </body>
